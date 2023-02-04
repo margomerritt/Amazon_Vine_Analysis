@@ -3,16 +3,16 @@
 
 ### Purpose
 
-Analyzes Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. There are approxiametely 50 different Amazon Vine review datasets to choose from. This project analyzes a sporting goods review dataset. All the datasets have the same schemata, as shown in the following image:
+Analyzes Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. There are approxiametely 50 different Amazon Vine reviews datasets to choose from. This project analyzes a sporting goods reviews dataset. All the datasets have the same schemata, as shown in the following image:
 
 ![data-16-challenge-format-and-info-amazon-review-datasets-columns-1](https://user-images.githubusercontent.com/111299372/216786997-d95a77f7-2e91-478e-b5ad-2fbb3b8322a4.png)
 
-An AWS RDS database is created with tables in pgAdmin. A dataset is picked from the amazon review datasets https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt. The dataset was then extracted in a DataFrame. The original DataFram was transformed into four separate DataFrames that match the table schema in pgAdmin. Project uses PySpark to run an analysis to determine if having a paid Vine review makes a difference in the percentage of 5-star reviews. 
+An AWS RDS database is created with tables in pgAdmin. A dataset is picked from the amazon reviews datasets https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt. The dataset was then extracted in a DataFrame. The original DataFrame was transformed into four separate DataFrames that match the table schema in pgAdmin. Project uses PySpark to run an analysis to determine if having a paid Vine review makes a difference in the percentage of 5-star reviews. 
 
 ### Resources
 
 #### Datasource
-Amazon review dataset on sporting goods: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Sports_v1_00.tsv.gz
+Amazon reviews dataset on sporting goods: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Sports_v1_00.tsv.gz
 
 #### Software
 PySpark, PostgreSQL, pgAdmin, AWS, Google Colab
@@ -60,7 +60,7 @@ Thus there are more non-paid (non-Vine) reviews than there are paid (Vine) revie
 
 From our PySpark analysis we found that 41.62% of the paid Vine reviews were 5-star. The unpaid Non-Vine reviews had a 5-star rating of 53.02%. Thus the non-paid reviews had a higher positivity rating than the paid reviews. Hence for this sporting goods reviews dataset we can determine that there is not a positivity bias for reviews in the paid Vine program. 
 
-Before we ran our analysis in PySpark we filtered the Vine DataFrame to retrieve all the rows where the total_votes count is equal to or greater than 20. This allowed us to pick reviews that are more likely to be helpful and to avoid having division by zero errors later on. However, this could have introduced a bias into our analysis. There could be a lot more than 139 5-star reviews in our Vine reviews dataset. Those 5-star reviews might have just not received a lot of votes on the review. Customers are generally more willing to upvote a non-paid for 5-star review than they are for an obviously paid for 5-star review. 
+Before we ran our analysis in PySpark we filtered the Vine DataFrame to retrieve all the rows where the total_votes count is equal to or greater than 20. This allowed us to pick reviews that were more likely to be helpful and to avoid having division by zero errors later on. However, this could have introduced error into our analysis. There could be a lot more than 139 5-star reviews in our Vine reviews dataset. Those 5-star reviews might have just not received a lot of votes on the review. Customers are generally more willing to upvote a non-paid for 5-star review than they are for an obviously paid for 5-star review. 
 
 An additional helpful analysis is to use the unfiltered Vine review dataset and run the same analysis on it. In this analysis we would have to be careful not to introduce a divide by zero error. After this additional analysis is run we can compare it to the original results to help further determine if a positivity bias exists for the paid Vine reviews. 
 
