@@ -46,7 +46,7 @@ Thus there are more non-paid (non-Vine) reviews than there are paid (Vine) revie
 
 ![number of 5-star unpaid reviews](https://user-images.githubusercontent.com/111299372/216789693-df301988-2e36-4327-bd86-50f557cf50b9.png)
 
-### Percentage of 5-star reviews:
+### Percentage of 5-star reviews
 
 * We see that 41.62% of the paid Vine reviews were 5-star:
 
