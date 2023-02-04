@@ -63,5 +63,5 @@ From our PySpark analysis we found that 41.62% of the paid Vine reviews were 5-s
 Before we ran our analysis in PySpark we filtered the Vine DataFrame to retrieve all the rows where the total_votes count is equal to or greater than 20. This allowed us to pick review that are more likely to be helpful and to avoid having division by zero errors later on. However, this could have introduced a bias into our analysis. There could be a lot more than 139 5-star reviews in our Vine reviews dataset. Those 5-star reviews might have just not received a lot of votes on the review. Customers are generally more willing to upvote a non-paid for 5-star review than they are for an obviously paid for 5-star review. 
 
 An additional helpful analysis is to use the unfiltered Vine review dataset, but run the same analysis on it. In this analysis we would have to be careful not to introduce a divide by zero error. After this additional analysis is run we can compare it to the original results to help further determine if a positivity bias exists for the paid Vine reviews. 
-![image](https://user-images.githubusercontent.com/111299372/216790736-c2b4b654-d2b4-4a92-8e49-ac767efab767.png)
+
 
