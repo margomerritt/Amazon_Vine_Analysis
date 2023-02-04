@@ -57,3 +57,6 @@ Thus there are more non-paid (non-Vine) reviews than there are paid (Vine) revie
 ![percentage of unpaid 5-star reviews](https://user-images.githubusercontent.com/111299372/216789739-18d70ed7-22d8-429a-a3d2-4009ba84dd86.png)
 
 ## Summary
+
+From our PySpark analysis we found that 41.62% of the paid Vine reviews were 5-star. The unpaid Non-Vine reviews had a 5-star rating of 53.02%. Thus the non-paid reviews had a higher positivity rating than the paid reviews. Hence for this sporting goods reviews dataset we can determine that there is not a positivity bias for reviews in the paid Vine program. 
+
