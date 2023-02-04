@@ -48,11 +48,11 @@ There are 32665 5-star Non-Vine reviews:
 
 ### Percentage of 5-star reviews:
 
-We see that 41.62% of the 5-star reviews were paid Vine reviews:
+We see that 41.62% of the paid Vine reviews were 5-star:
 
 ![percentage of 5-star paid reviews](https://user-images.githubusercontent.com/111299372/216789724-eac2e0f4-73f3-41e9-a146-7a937a15ea9a.png)
 
-We see that 53.02 percent of the 5-star reviews were unpaid non-Vine reviews:
+We see that 53.02 percent of the non-paid reviews were 5-star:
 
 ![percentage of unpaid 5-star reviews](https://user-images.githubusercontent.com/111299372/216789739-18d70ed7-22d8-429a-a3d2-4009ba84dd86.png)
 
