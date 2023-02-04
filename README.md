@@ -14,7 +14,7 @@ Analyzes Amazon review written by members of the paid Amazon Vine program. The A
 #### Datasource
 Amazon review dataset on sporting goods: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Sports_v1_00.tsv.gz
 
-### Software
+#### Software
 PySpark, PostgreSQL, pgAdmin, AWS, Google Colab
 
 ## Results
