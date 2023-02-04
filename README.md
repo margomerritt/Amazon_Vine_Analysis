@@ -23,7 +23,7 @@ PySpark was utilized to run an analysis on the sporting goods reviews dataset. I
 
 ### Total number of Amazon Reviews
 
-From our PySpark analysis we see that there are 334 Vine reviews: 
+From the PySpark analysis we see that there are 334 Vine reviews: 
 
 ![total number of paid reviews](https://user-images.githubusercontent.com/111299372/216787683-381713b8-ac3b-4ecd-82b6-1c23228288af.png)
 
@@ -37,4 +37,23 @@ Thus there are more non-paid (non-Vine) reviews than there are paid (Vine) revie
 
 
 ### Total Number of 5-Star Reviews
+
+From the PySpark analysis we see that there are 139 5-star Vine reviews:
+
+![total number of paid 5-star reviews](https://user-images.githubusercontent.com/111299372/216789679-14997e08-6513-4ef1-8e85-ea5462077937.png)
+
+There are 32665 5-star Non-Vine reviews:
+
+![number of 5-star unpaid reviews](https://user-images.githubusercontent.com/111299372/216789693-df301988-2e36-4327-bd86-50f557cf50b9.png)
+
+### Percentage of 5-star reviews:
+
+We see that 41.62% of the 5-star reviews were paid Vine reviews:
+
+![percentage of 5-star paid reviews](https://user-images.githubusercontent.com/111299372/216789724-eac2e0f4-73f3-41e9-a146-7a937a15ea9a.png)
+
+We see that 53.02 percent of the 5-star reviews were unpaid non-Vine reviews:
+
+![percentage of unpaid 5-star reviews](https://user-images.githubusercontent.com/111299372/216789739-18d70ed7-22d8-429a-a3d2-4009ba84dd86.png)
+
 ## Summary
