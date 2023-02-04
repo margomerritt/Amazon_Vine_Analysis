@@ -19,4 +19,16 @@ PySpark, PostgreSQL, pgAdmin, AWS, Google Colab
 
 ## Results
 
+PySpark was utilized to run an analysis on the sporting goods reviews dataset. In this analysis we'll determine if having a paid Vine review makes a difference in the percentage of 5-star reviews. We started by filtering the vine data to retrieve all the rows where the total_votes count is equal to or greater than 20 to pick reviews that are more likely to be helpful and to avoid having division by zero errors later on. Vine reviews are the paid reviews. Non-Vine reviews are the unpaid reviews.
+
+### Total number of Amazon reviews
+
+From our PySpark analysis we see that there are 334 Vine reviews: 
+![total number of paid reviews](https://user-images.githubusercontent.com/111299372/216787683-381713b8-ac3b-4ecd-82b6-1c23228288af.png)
+
+There are 139 Non-Vine reviews:
+![total number of paid 5-star reviews](https://user-images.githubusercontent.com/111299372/216787789-cbbd1b71-fdd3-4dcb-971e-d20973ba0346.png)
+
+Thus there are more paid (Vine) reviews than there non-paid (non-Vine) reviews for our sporting goods review data.
+
 ## Summary
